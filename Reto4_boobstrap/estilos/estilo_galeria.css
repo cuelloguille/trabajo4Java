@@ -1,0 +1,29 @@
+/* Estilos para la galería */
+#galeria .obra {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ddd; /* Borde mínimo alrededor de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos de hover */
+}
+
+#galeria .obra:hover {
+    transform: scale(1.05); /* Efecto de zoom en hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para destacar la imagen en hover */
+}
+
+#galeria .descripcion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+#galeria .obra:hover .descripcion {
+    opacity: 1; /* Muestra la descripción solo en hover */
+}

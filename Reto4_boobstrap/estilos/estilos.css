@@ -1,0 +1,265 @@
+/* Reset de márgenes y paddings globales */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/caras.jpg');
+} 
+
+/* Asegura que el contenedor ocupe el ancho completo */
+.container-fluid {
+    padding: 0;
+}
+
+/* Estilo del Navbar */
+/* Estilo específico para la barra de navegación */
+.navbar {
+    background-color:  #91693cc8 !important; /* Color de fondo de la barra de navegación */
+    color: #000000 !important; /* Color del texto en la barra de navegación */
+}
+
+.navbar .nav-link {
+    color: #000000 !important; /* Color de los enlaces en la barra de navegación */
+}
+
+.navbar .nav-link:hover {
+    color: #00000056 !important; /* Color de los enlaces al pasar el cursor */
+}
+
+
+.navbar-brand img {
+    width: 110px;
+    padding-left: 10px;
+    
+    
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    color: #000000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 136, 255);
+}
+
+/* Estilo de la bienvenida */
+#bienvenida {
+    padding: 20px;
+}
+
+#bienvenida h1 {
+    margin-bottom: 20px;
+}
+
+/* Estilo del slider */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo de novedades */
+#novedades {
+    padding: 20px;
+    text-align: center;
+}
+
+#galeria {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    background-color:#91693cc8;
+    border: 1px solid #91693cc8;
+}
+
+/* Alineación de texto */
+.text-center {
+    text-align: center;
+}
+
+/* Estilo para listas sin puntos */
+.list-group {
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    border-radius: 0;
+}
+
+/* Estilo para alertas y otros elementos */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.alert-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert.hidden {
+    display: none;
+}
+
+.alert p {
+    margin: 0;
+}
+
+.alert button {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+/* Estilo para recuadro de artistas */
+.artist-box {
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* centra los imagenes de la galeria */
+.row{
+    text-align: center;
+}
+
+/*modifica solo la iamgen del index */
+.row-1{ 
+    text-align: center;
+    width: 70%;  /*tocar solo esto */
+    height: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Estilo para cada obra de arte */
+.obra {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sora suave */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo para la imagen dentro de la obra */
+.obra img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre imagen y descripción */
+}
+
+/* Estilo para la descripción debajo de la imagen */
+.descripcion {
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+}
+
+/* Efecto al pasar el cursor sobre la obra */
+.obra:hover {
+    transform: scale(1.03); /* Ligeramente más grande al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el cursor */
+}
+
+
+/* recuadro y efectos a los artistas/*
+/* Estilos para las tarjetas de los artistas */
+.card  {
+    border: 1px solid #ddd;
+    border-radius: .375rem;
+    text-align: left;
+    background-color:  #91693cc8;
+}
+
+.card{
+    border: 1px solid #e1e1e1; /* Borde sutil y ligero */
+    padding: 20px;             /* Espacio interior */
+    margin: 20px 0;            /* Margen superior e inferior */
+    border-radius: 8px;        /* Esquinas redondeadas */
+    background-color: #91693cc8; /* Color de fondo ligero */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Estilos para los videos */
+.ratio {
+    
+    margin-bottom: 1rem;
+    
+}
+
+/* Estilos para la bibliografía */
+.border {
+    border-width: 1px;
+    border-color: #ddd;
+    background-color: #91693cc8;
+}
+
+.border p a {
+    color: #007bff;
+}
+
+.border p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el enlace activo en la barra de navegación */
+/* Estilo para los enlaces en la barra de navegación */
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #000000; /* Color de texto por defecto */
+    padding: 10px;
+    display: inline-block;
+    transition: border-bottom 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo para el enlace activo */
+.navbar-nav .nav-link.active {
+    color: rgb(0, 0, 0); /* Color de texto para el enlace activo */
+    font-weight: bold; /* Texto en negrita para el enlace activo */
+    border-bottom: 2px solid rgb(0, 0, 0); /* Línea debajo del enlace activo */
+}
+
+/* Opcional: Estilo para el enlace al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0); /* Color de texto al pasar el cursor */
+    border-bottom: 2px solid rgb(255, 221, 0); /* Línea debajo al pasar el cursor */
+}
+
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+
+.custom-send-btn{
+    background-color: #ff6347;
+    color: #ffffff;
+    border-color:#ff6347;
+}
+
+.custom-send-btn:hover{
+    background-color: #ff4500;
+    border-color: #ff4500;
+}

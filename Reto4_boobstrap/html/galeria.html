@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <link rel="stylesheet" href="/estilos/estilo_galeria.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/gallery.png" alt="Logo" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/artistas.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/formulario.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container my-4">
+            <h1 class="text-center mb-4">Galería de Arte</h1>
+    
+
+        <div class="row" id="galeria">
+            <!-- Columna 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/Pintura2.jpeg" alt="Obra de arte 1" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>Bodegon con tres cachorros</h3>
+                        <p>Artista: Paul Gauguin</p>
+                        <p>Fecha: 1888</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Añadir más imágenes aquí para la columna 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/nueva1.jpg" alt="Obra de arte 2" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>El Conjuro</h3>
+                        <p>Artista: Francisco De Goya</p>
+                        <p>Fecha: 1798</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Añadir más imágenes aquí para la columna 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/nueva3.jpg" alt="Obra de arte 3" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>La Mona Lisa</h3>
+                        <p>Artista: Leonardo Da Vinci</p>
+                        <p>Fecha: 1503</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/Pintura1.jpeg" alt="Obra de arte 4" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>Marina con vaca</h3>
+                        <p>Artista: Paul Gauguin</p>
+                        <p>Fecha: 1888</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Añadir más imágenes aquí para la columna 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/nueva4.jpg" alt="Obra de arte 5" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>La Belle Ferronière</h3>
+                        <p>Artista: Leonardo Da Vinci</p>
+                        <p>Fecha: 1495</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Añadir más imágenes aquí para la columna 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="obra">
+                    <img src="/img/nueva5.jpg" alt="Obra de arte 6" class="img-fluid preview-image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    <div class="descripcion">
+                        <h3>Dama del armiño</h3>
+                        <p>Artista: Leonardo Da Vinci</p>
+                        <p>Fecha: 1490</p>
+                        <p>Técnica: Óleo sobre lienzo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="/js/script_galeria.js"></script>
+    <script src="/js/script_cursor.js"></script>
+</body>
+</html>

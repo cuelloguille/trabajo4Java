@@ -1,0 +1,32 @@
+/* Estilo para la alerta personalizada */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .alert-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .alert.hidden {
+    display: none;
+  }
+  
+  .alert p {
+    margin: 0;
+  }
+  
+  .alert button {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  

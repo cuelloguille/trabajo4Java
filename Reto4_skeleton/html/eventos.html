@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Galería de Arte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <script src="/js/script_evento.js" defer></script> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="/img/gallery.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="/index.html">Inicio</a>
+            <a href="/html/galeria.html">Galería</a>
+            <a href="/html/artistas.html">Artistas</a>
+            <a href="/html/eventos.html">Eventos</a>
+            <a href="/html/contacto.html">Contacto</a>
+            <a href="/html/formulario.html">Login</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Eventos en la Galería de Arte</h1>
+
+        <!-- Calendario de Eventos -->
+        <section id="calendario-eventos">
+        <div class="artist-box">    
+            <h2>Próximos Eventos</h2>
+            <ul>
+                <li>
+                    <h3>Exposición de Arte Moderno</h3>
+                    <p>Fecha: 30 de julio de 2024</p>
+                    <p>Hora: 10:00 AM - 6:00 PM</p>
+                    <p>Descripción: Una exposición que destaca las últimas tendencias en arte moderno.</p>
+                </li>
+                <li>
+                    <h3>Taller de Pintura</h3>
+                    <p>Fecha: 5 de agosto de 2024</p>
+                    <p>Hora: 2:00 PM - 5:00 PM</p>
+                    <p>Descripción: Un taller práctico sobre técnicas de pintura para principiantes.</p>
+                </li>
+                <li>
+                    <h3>Visita Guiada</h3>
+                    <p>Fecha: 12 de agosto de 2024</p>
+                    <p>Hora: 1:00 PM - 3:00 PM</p>
+                    <p>Descripción: Un recorrido guiado por nuestra galería con explicaciones detalladas de las obras de arte.</p>
+                </li>
+            </ul>
+        </div>   
+        </section>
+
+        <!-- Registro y Tickets -->
+        <section id="registro-tickets">
+        <div class="artist-box">  
+            
+            <h2>Registro para Eventos</h2>
+            <form action="/registrar-evento" method="POST">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="nombre">Nombre</label>
+                        <input class="u-full-width" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="six columns">
+                        <label for="email">Email</label>
+                        <input class="u-full-width" type="email" placeholder="tuemail@ejemplo.com" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="evento">Selecciona un Evento</label>
+                <select class="u-full-width" id="evento" name="evento" required>
+                    <option value="Exposición de Arte Moderno">Exposición de Arte Moderno</option>
+                    <option value="Taller de Pintura">Taller de Pintura</option>
+                    <option value="Visita Guiada">Visita Guiada</option>
+                </select>
+                <label for="boletos">Cantidad de Boletos</label>
+                <input class="u-full-width" type="number" id="boletos" name="boletos" min="1" max="10" required>
+                <input class="button-primary" type="submit" value="Registrar y Comprar Boletos">
+            </form>
+        </div>     
+        </section>
+
+        <!-- Alerta personalizada -->
+        <div id="customAlert" class="alert hidden">
+            <div class="alert-content">
+                <p id="alertMessage"></p>
+                <button id="alertClose" class="button-primary">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script_index.js"></script>
+
+</body>
+</html>

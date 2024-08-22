@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Regístrate!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="/estilos/formulario_inicio.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <img src="/img/gallery.png" alt="Foto" class="u-max-full-width">
+      </div>
+    </div>
+    
+    <form id="registroForm">
+      <div class="row">
+        <div class="twelve columns">
+          <label for="usuario"></label>
+          <input class="u-full-width" type="text" placeholder="Usuario" id="usuario" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="pass"></label>
+          <input class="u-full-width" type="password" placeholder="Contraseña" id="pass" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <label for="correo"></label>
+          <input class="u-full-width" type="email" placeholder="Correo Electrónico" id="correo" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          <input class="button-primary u-full-width" type="submit" value="Registrar">
+        </div>
+      </div>
+    </form>
+
+    <!-- Alerta personalizada -->
+    <div id="customAlert" class="alert hidden">
+      <div class="alert-content">
+        <p id="alertMessage"></p>
+        <button id="alertClose" class="button-primary">Cerrar</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="twelve columns">
+        <a href="/index.html" class="button button-primary u-full-width">Volver al Inicio</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/script_formulario.js"></script>
+  <script src="/js/script_index.js"></script>
+
+</body>
+</html>

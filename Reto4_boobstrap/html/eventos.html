@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/gallery.png" alt="Logo" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/artistas.html">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/formulario.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <div class="container my-4">
+        <h1 class="text-center mb-4">Eventos en la Galería de Arte</h1>
+
+        <!-- Calendario de Eventos -->
+        <section id="calendario-eventos" class="mb-5">
+            <h2>Próximos Eventos</h2>
+            <ul class="list-unstyled">
+                <li class="mb-4">
+                    <h3>Exposición de Arte Moderno</h3>
+                    <p><strong>Fecha:</strong> 30 de julio de 2024</p>
+                    <p><strong>Hora:</strong> 10:00 AM - 6:00 PM</p>
+                    <p><strong>Descripción:</strong> Una exposición que destaca las últimas tendencias en arte moderno.</p>
+                </li>
+                <li class="mb-4">
+                    <h3>Taller de Pintura</h3>
+                    <p><strong>Fecha:</strong> 5 de agosto de 2024</p>
+                    <p><strong>Hora:</strong> 2:00 PM - 5:00 PM</p>
+                    <p><strong>Descripción:</strong> Un taller práctico sobre técnicas de pintura para principiantes.</p>
+                </li>
+                <li class="mb-4">
+                    <h3>Visita Guiada</h3>
+                    <p><strong>Fecha:</strong> 12 de agosto de 2024</p>
+                    <p><strong>Hora:</strong> 1:00 PM - 3:00 PM</p>
+                    <p><strong>Descripción:</strong> Un recorrido guiado por nuestra galería con explicaciones detalladas de las obras de arte.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Registro y Tickets -->
+        <section id="registro-tickets" class="mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Registro para Eventos</h2>
+                        <form action="/registrar-evento" method="POST">
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label"></label>
+                                    <input class="form-control" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label"></label>
+                                    <input class="form-control" type="email" placeholder="tuemail@ejemplo.com" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="evento" class="form-label">Selecciona un Evento</label>
+                                <select class="form-select" id="evento" name="evento" required>
+                                    <option value="Exposición de Arte Moderno">Exposición de Arte Moderno</option>
+                                    <option value="Taller de Pintura">Taller de Pintura</option>
+                                    <option value="Visita Guiada">Visita Guiada</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="boletos" class="form-label">Cantidad de Boletos</label>
+                                <input class="form-control" type="number" id="boletos" name="boletos" min="1" max="10" required>
+                            </div>
+                            <button class="btn btn-primary custom-send-btn" type="submit">Registrar y Comprar Boletos</button>
+                        </form>
+        </section>
+
+        <!-- Alerta personalizada -->
+        <div id="customAlert" >
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script_cursor.js"></script>
+    <script src="/js/script_evento.js"></script>
+</body>
+
+</html>
+

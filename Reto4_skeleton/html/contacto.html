@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Galería de Arte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="/estilos/estilos.css">
+    <script src="/js/script_contacto.js" defer></script> <!-- Incluye el script aquí -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="/img/gallery.png" alt="Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="/index.html">Inicio</a>
+            <a href="/html/galeria.html">Galería</a>
+            <a href="/html/artistas.html">Artistas</a>
+            <a href="/html/eventos.html">Eventos</a>
+            <a href="/html/contacto.html">Contacto</a>
+            <a href="/html/formulario.html">Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center">Contacto</h1>
+
+        <!-- Formulario de Contacto -->
+        <section id="formulario-contacto">
+        <div class="artist-box">     
+            <h2>Envíanos tu Consulta</h2>
+            <form action="/enviar-consulta" method="POST">
+                <div class="row">
+                    <div class="six columns">
+                        <label for="nombre">Nombre</label>
+                        <input class="u-full-width" type="text" placeholder="Tu Nombre" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="six columns">
+                        <label for="email">Email</label>
+                        <input class="u-full-width" type="email" placeholder="tuemail@ejemplo.com" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="mensaje">Mensaje</label>
+                <textarea class="u-full-width" placeholder="Tu mensaje..." id="mensaje" name="mensaje" required></textarea>
+                <input class="button-primary" type="submit" value="Enviar">
+            </form>
+        </div>    
+        </section>
+
+        <!-- Información de Contacto -->
+        <section id="informacion-contacto">
+        <div class="artist-box">      
+            <h2>Información de Contacto</h2>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@galeriadearte.com</p>
+        </div>      
+        </section>
+
+        <!-- Redes Sociales -->
+        <section id="redes-sociales">
+        <div class="artist-box">                  
+            <h2>Síguenos en Redes Sociales</h2>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>      
+        </section>
+
+        <!-- Alerta personalizada -->
+        <div id="customAlert" class="alert hidden">
+            <div class="alert-content">
+                <p id="alertMessage"></p>
+                <button id="alertClose" class="button-primary">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+        <!-- Información de Contacto -->
+        <h1>Ubicación </h1>
+    <div class="maps">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.3108422454115!2d-64.37302461579183!3d-33.10091091142978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d200f668754821%3A0x580f1b1674330c04!2sWenceslao%20Tejerina%20Nte.%20783%2C%20X5800%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1723496520842!5m2!1ses-419!2sar" 
+        width="1100" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>  
+
+    <script src="/js/script_index.js"></script>
+</body>
+</html>
